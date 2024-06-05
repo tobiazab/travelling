@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+            <div class="logo-container">
+              <a href="#"><img src="../img/logo2.jpeg" alt=""></a>
+            </div>
+              <ul class="nav-links">
+                <li><a href="../carrito/carrito.html"><p><img id="cartlogo" src="../img/cart-logo.png" alt=""></p></a></li>
+                <li><a href="../index.html"><p>Home</p></a></li>
+                <li><a href="../shop/shop.html"><p>Destinos</p></a></li>
+                <li><a href="../login/login.html"><p>Iniciar Sesion</p></a></li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    <label for="">Carrito:</label>
+    <div class="shop">
+        <div class="compra sidney">
+            <ul>
+                <li>Sidney, Australia</li>
+                <li><input type="number" name="Pasaje" id="sid" min="0"></li>
+                <input type="button" value="Calcular" onclick="precioAus()"/> 
+                <li>Total:$</li>
+                <li id="res-aus">0</li>
+            </ul>
+        </div>
+        <div class="compra suecia">
+            <ul>
+                <li>Estocolmo, Suecia</li>
+                <li><input type="number" name="Pasaje" id="sue" min="0"></li>
+                <input type="button" value="Calcular" onclick="precioSue()"/>
+                <li>Total:$</li>
+                <li id="res-sue">0</li>
+            </ul>
+        </div>
+        <div class="compra seul">
+            <ul>
+                <li>Seúl, Corea Sur</li>
+                <li><input type="number" name="Pasaje" id="cor" min="0"></li>
+                <input type="button" value="Calcular" onclick="precioCor()"/>
+                <li>Total:$</li>
+                <li id="res-cor">0</li>
+            </ul>
+        </div>
+            <div class="compra mexico">
+                <ul>
+                <li>Yucatán, México</li>
+                <li><input type="number" name="Pasaje" id="mex" min="0"></li>
+                <input type="button" value="Calcular" onclick="precioMex()"/>
+                <li>Total:$</li>
+                <li id="res-mex">0</li>
+            </ul>
+        </div>
+        <div class="compra cordoba">
+            <ul>
+                <li>Cordoba, Argentina</li>
+                <li><input type="number" name="Pasaje" id="cor" min="0"></li>
+                <input type="button" value="Calcular" onclick="precioCord()"/>
+                <li>Total:$</li>
+                <li id="res-cord">0</li>
+            </ul>
+        </div>
+        <div class="compra mendoza">
+            <ul>
+                <li>Mendoza, Argentina</li>
+                <li><input type="number" name="Pasaje" id="men" min="0"></li>
+                <input type="button" value="Calcular" onclick="precioMen()"/>
+                <li>Total:$</li>
+                <li id="res-men">0</li>
+            </ul>
+        </div>
+    </div>
 
+    <div class="productos">
+        <div class="card-container">
+            <div class="card oceania" onclick="CompraSidney()">
+                <img src="https://static1.squarespace.com/static/55ee34aae4b0bf70212ada4c/57d9829837c5819632bc630b/5e06e89e74877f00dbb21494/1577545446402/keith-zhu-qaNcz43MeY8-unsplash+%281%29.jpg?format=1500w" alt="Australia"/>
+                <h2>Sydney, Australia</h2>
+            </div>
+            <div class="card europa" onclick="CompraSuecia()">
+                 <img src="https://a.cdn-hotels.com/gdcs/production160/d1913/579b250e-49fe-44ed-9f9e-39d8d53a8c75.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+                 alt="Suecia" />
+                <h2>Estocolmo, Suecia</h2>
+            </div>
+            <div class="card asia" onclick="CompraSeul()">
+                 <img src="https://lonelyplanetes.cdnstatics2.com/sites/default/files/styles/max_1300x1300/public/fotos/coreadelsur_seul_dongdaemundesignplaza_shutterstockrf_670991701_fenlioq_shutterstock.jpg?itok=J4MNT6CJ" alt="Seul , Corea del sur "/>
+                 <h2>Seúl, Corea Sur </h2>
+        </div>
+            <div class="card america" onclick="CompraMexico()">
+                <img src="https://www.yucatan.gob.mx/docs/galerias/chichen_itza/38.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh" alt="Yucatán, México"/>
+                <h2>Yucatán, México</h2>
+        </div>
+        <div class="card america" onclick="CompraCordoba()">
+                <img src="https://mediaim.expedia.com/destination/1/6a8203b71ad6e62e6b4d6b9923a2ca59.jpg?impolicy=fcrop&w=1040&h=580&q=mediumHigh" alt="Cordoba, Argentina"/>
+                <h2>Cordoba, Argentina</h2>
+        </div>
+        <div class="card america" onclick="CompraMendoza()">
+            <img src="https://www.argentina.gob.ar/sites/default/files/2020/06/provincia-mendoza-jumbotron.jpg" alt="mendoza"/>
+            <h2>Mendoza, Argentina</h2>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./cart.js"></script>
+</body>
+</html>
